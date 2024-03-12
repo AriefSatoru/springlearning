@@ -37,5 +37,22 @@ public class CategoryServiceImpl implements CategoryService {
 	public void removeCategory(Long id) {
 		categoryRepository.deleteById(id);
 	}
+	
+	//dibawah ini untuk yg mvc
+
+	@Override
+	public Category saveCategory(Category category) {
+		return categoryRepository.save(category);
+	}
+
+	@Override
+	public Category getCategoryById(Long id) {
+		return categoryRepository.getcaCategoryById2(id);
+	}
+
+	@Override
+	public void deleteCategoryById(Long id) {
+		categoryRepository.deleteById(id);
+	}
 
 }

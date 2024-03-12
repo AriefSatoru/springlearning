@@ -13,4 +13,10 @@ public interface CategoryService {
 	Optional<Category> findCategoryById(Long id);
 	
 	void removeCategory(Long id);
+	
+	
+	//dibawh ini untuk mvc
+	Category saveCategory(Category category);
+	Category getCategoryById(Long id);
+	void deleteCategoryById(Long id);
 }

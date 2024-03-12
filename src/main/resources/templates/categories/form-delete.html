@@ -1,0 +1,19 @@
+<h4>Are You Sure to Delete This Data?</h4>
+<table>
+	<tr>
+		<td>Initial :</td>
+		<td th:text="${categoryForm.initial}" style="padding: 5px; text-align: right;"></td>
+	</tr>
+	<tr>
+		<td>Category Name :</td>
+		<td th:text="${categoryForm.name}" style="padding: 5px; text-align: right;"></td>
+	</tr>
+	<tr>
+		<td>Description :</td>
+		<td th:text="${categoryForm.description}" style="padding: 5px; text-align: right;"></td>
+	</tr>
+</table>
+<hr></hr>
+<button type="button" class="btn btn-danger" th:value="${categoryForm.id}" onclick="deleteCategory(this.value)">
+	Delete
+</button>
